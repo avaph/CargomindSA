@@ -1,3 +1,5 @@
-function func() {
+function showDesigner() {
+
+    if ( jobTitle  == "Designer")
 
 }

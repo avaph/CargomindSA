@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Sidebar.qml</file>
+        <file>Planningscene.qml</file>
+        <file>main.cpp</file>
+        <file>Resources/Mock/Aidan.png</file>
+        <file>Resources/Mock/Ava.png</file>
+        <file>Resources/Mock/Bebe.png</file>
+        <file>Resources/Mock/Ceci.png</file>
+        <file>Resources/Mock/David.png</file>
+        <file>Resources/Mock/Donna.png</file>
+        <file>Resources/Mock/Emma.png</file>
+        <file>Filter.js</file>
+    </qresource>
+</RCC>
