@@ -1,0 +1,419 @@
+/*list of colours
+
+background colour
+
+1. main bg:  rgb(32, 32, 32);
+2. list bg:	 rgb(40, 40, 40);
+3. info bg:  rgb(44, 44, 44);
+4. button bg:	rgb(48, 48, 48);
+
+button colour
+
+1. blue normal: rgb(41, 72, 119); // hover: rgb(54, 96, 158); // clicked: rgb(37, 65, 107); 
+2. grey normal: transparent; // hover: rgb(64, 64, 64); // clicked: rgb(50, 50, 50);
+3. red normal: rgb(163, 55, 55); // hover: rgb(201, 68, 68); // clicked: rgb(150, 51, 51); 
+4. green normal: rgb(55, 163, 80); // hover: rgb(68, 201, 99); // clicked: rgb(51, 150, 74); 
+
+list colour:
+1. item - hover: rgb(64, 64, 64);
+2. item - clicked: rgb(50, 50, 50);
+3. item - selected: rgb(70, 70, 70);
+
+progress bar:
+1. bg: rgb(37,37,37);
+2. chunk: radius 5px, #3068BD, rgb(48,104,189);
+
+state colour
+
+1. red : #852F2F; rgb(133, 47, 47);
+2. yellow : #B4A922; rgb(180, 169, 34);
+3. green : #2F8543; rgb(47, 133, 67);
+
+graphics colour
+
+1. lines: rgb(0, 144, 255);
+2. selected: rgb(0, 238, 255);
+
+text colour
+
+1. normal : rgb(240, 240, 240);
+2. less important: rgb(138, 138, 138);
+3. button - not selected:  rgb(100, 100, 100);
+4. button - disabled: rgb(64, 64, 64)*/
+
+#centralwidget {
+	background-color: rgb(32, 32, 32);
+	border: none;
+}
+
+#logo {
+	color: rgb(138, 138, 138);
+	font-family: AvenirNext LT Pro Regular;
+	font-size: 18px;
+}
+
+QFrame {
+    color: rgb(138, 138, 138);
+}
+
+QLabel {
+	color: rgb(240, 240, 240);
+	font-family: AvenirNext LT Pro Regular;
+	font-size: 16px;
+}
+
+QLabel[class="textLabel"] {
+	color: rgb(138, 138, 138);
+	font-family: AvenirNext LT Pro Regular;
+	font-size: 15px;
+}
+
+QLabel[class="textValue"] {
+	color: rgb(240, 240, 240);
+	font-family: AvenirNext LT Pro Regular;
+	font-size: 18px;
+}
+
+QLabel[class="textTitle"] {
+	color: rgb(138, 138, 138);
+	font-family: AvenirNext LT Pro Regular;
+	font-size: 18px;
+}
+
+ QToolButton {
+	icon-size: 64px ;
+}
+
+QToolButton[class="QToolButton1"]:enabled {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border:  none;
+	background: rgb(41, 72, 119);
+	color: rgb(240, 240, 240);
+	text-align: center;
+	font-family: AvenirNext LT Pro Regular;
+	font-size: 16px;
+	outline: none;
+}
+
+QToolButton[class="QToolButton1"]:disabled {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border:  none;
+	background: none;
+	color: rgb(100, 100, 100);
+	text-align: center;
+	font-family: AvenirNext LT Pro Regular;
+	font-size: 16px;
+	outline: none;
+}
+
+QToolButton[class="QToolButton1"]:hover {
+	padding-top: 15px;
+	padding-bottom: 15px;
+    color: rgb(240, 240, 240);
+    background: rgb(54, 96, 158);
+	outline: none;
+}
+
+QToolButton[class="QToolButton1"]:pressed {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background: rgb(37, 65, 107); 
+	color: rgb(240, 240, 240);
+	outline: none;
+}
+
+QToolButton[class="QToolButton2"]:enabled {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border:  none;
+	background: transparent;
+	color: rgb(240, 240, 240);
+	text-align: center;
+	font-family: AvenirNext LT Pro Regular;
+	font-size: 16px;
+}
+
+QToolButton[class="QToolButton2"]:disabled {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border:  none;
+	background: transparent;
+	color: rgb(100,100,100);
+	text-align: center;
+	font-family: AvenirNext LT Pro Regular;
+	font-size: 16px;
+}
+
+QToolButton[class="QToolButton2"]:hover {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background: rgb( 64, 64, 64);
+	color:  rgb(240, 240, 240);
+}
+
+QToolButton[class="QToolButton2"]:pressed {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	color:  rgb(240, 240, 240);
+	background: rgb(50, 50, 50);
+}
+
+QToolButton[class="QToolButton2"]:checked {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	color:  rgb(54, 96, 158);
+	font-weight: bold;
+	background: transparent;
+}
+
+#resetviewBtn:enabled {
+	border: none;
+	background: transparent;
+	color: rgb(240, 240, 240);
+	text-align: center;
+	font-family: AvenirNext LT Pro Regular;
+	font-size: 16px;
+}
+
+#resetviewBtn:hover {
+	color: rgb(255,255,255);
+}
+
+#resetviewBtn:pressed {
+	color: rgb(255,255,255);
+}
+
+#clearBtn:enabled {
+	border: none;
+	background: transparent;
+	color: rgb(240, 240, 240);
+	text-align: center;
+	font-family: AvenirNext LT Pro Regular;
+	font-size: 16px;
+}
+
+#clearBtn:hover {
+	color: rgb(255,255,255);
+}
+
+#clearBtn:pressed {
+	color: rgb(255,255,255);
+}
+
+
+QToolButton[class="QToolButton3"]:enabled {
+	border:  none;
+	background: transparent;
+	color: rgb(240, 240, 240);
+	text-align: left;
+	font-family: AvenirNext LT Pro Regular;
+	font-size: 16px;
+}
+
+QToolButton[class="QToolButton3"] {
+	border: none;
+	background: transparent;
+	color: rgb(240, 240, 240);
+	text-align: left;
+	font-family: AvenirNext LT Pro Regular;
+	font-size: 18px;
+}
+
+QStackedWidget > QWidget#main{
+	background: transparent;
+}
+
+QStackedWidget > QWidget#box {
+	background: transparent;
+	margin: 0px;
+}
+
+QGroupBox{
+	background-color: rgb(44, 44, 44); 
+	border: none;
+}
+
+QGroupBox#btn_grp {
+	background-color: rgb(48, 48, 48);
+	border: none;
+	align-content: left;
+}
+
+QGroupBox#scene_grp {
+	background-color: rgb(32,32,32);
+	border: none;
+	align-content: left;
+}
+
+QGroupBox#list_grp {
+	background-color: rgb(40, 40, 40);
+	border: none;
+	align-content: left;
+}
+
+QCheckBox {
+    spacing: 5px;
+    font-family: AvenirNext LT Pro Regular;
+	font-size: 16px;
+    color: rgb(240, 240, 240);
+}
+
+QCheckBox::indicator {
+    width: 12px;
+    height: 12px;
+}
+
+QCheckBox::indicator:unchecked {
+   background: transparent;
+   border: 1px solid rgb(138, 138, 138);
+}
+
+QCheckBox::indicator:unchecked:hover {
+  background: transparent;
+   border: 1px solid rgb(240, 240, 240);
+}
+
+QCheckBox::indicator:unchecked:pressed {
+  background-color: rgb(240, 240, 240);
+   border: 1px solid rgb(240, 240, 240);
+}
+
+QCheckBox::indicator:checked {
+   background-color: rgb(240, 240, 240);
+   border: 1px solid rgb(240, 240, 240);
+}
+
+QCheckBox::indicator:checked:hover {
+   background-color: rgb(240, 240, 240);
+   border: 1px solid rgb(240, 240, 240);
+}
+
+QCheckBox::indicator:checked:pressed {
+   background-color: transparent;
+   border: 1px solid rgb(138, 138, 138);
+} 
+
+QRadioButton {
+    spacing: 5px;
+    font-family: AvenirNext LT Pro Regular;
+	font-size: 16px;
+	color:  rgb(240, 240, 240);
+    outline: none;
+    border: none;
+}
+
+QRadioButton:focused {
+    spacing: 5px;
+    font-family: AvenirNext LT Pro Regular;
+	font-size: 16px;
+	color: rgb(240, 240, 240);
+	outline: none;
+	border: none;
+}
+
+QRadioButton::indicator {
+    width: 12px;
+    height: 12px;
+	outline: none;
+}
+
+QRadioButton::indicator:unchecked {
+   background: transparent;
+   border: 1px solid rgb(138, 138, 138);
+    outline: none;
+}
+
+QRadioButton::indicator:unchecked:hover {
+  background: transparent;
+  border: 1px solid rgb(240, 240, 240);
+	outline: none;
+}
+
+QRadioButton::indicator:unchecked:pressed {
+  background-color: rgb(240, 240, 240);
+   border: 1px solid rgb(240, 240, 240);
+outline: none;
+}
+
+QRadioButton::indicator:checked {
+   background-color: rgb(240, 240, 240);
+   border: 1px solid rgb(240, 240, 240);
+   outline: none;
+}
+
+QRadioButton::indicator:checked:hover {
+   background-color: rgb(240, 240, 240);
+   border: 1px solid rgb(240, 240, 240);
+   outline: none;
+}
+
+QRadioButton::indicator:checked:pressed {
+   background-color: transparent;
+   border: 1px solid rgb(138, 138, 138);
+	outline: none;
+} 
+
+QListWidget {
+    background: rgb(40, 40, 40);
+    color: rgb(138, 138, 138);
+    font-family: AvenirNext LT Pro Regular;
+	font-size: 15px;
+	padding-top: 10px;
+    padding-bottom: 10px;
+	border: none;
+	align-content: left;
+}
+
+QListWidget::item {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+    background: transparent;
+	align-content: center;
+    outline: none;
+}
+
+QListWidget::item:hover {
+    background: rgb(64, 64, 64);
+	color: rgb(240, 240, 240);
+	border: none;
+	align-content: center;
+    outline: none;
+} 
+
+QListWidget::item:pressed {
+    background: rgb(50, 50, 50);
+	color: rgb(240, 240, 240);
+	border: none;
+	align-content: center;
+    outline: none;
+}
+
+QListWidget::item:selected {
+	border: 1px solid rgb(100, 100, 100);
+	background: transparent;
+	color: rgb(240, 240, 240);
+	align-content: center;
+    outline: none;
+}
+
+QListWidget::item:focus {
+	border: 1px solid rgb(100, 100, 100);
+	background: transparent;
+	color: rgb(240, 240, 240);
+	align-content: center;
+    outline: none;
+}
+
+QMessageBox {
+	color: rgb(240, 240, 240);
+	font-family: AvenirNext LT Pro Regular;
+	font-size: 16px;
+}
+
+/*25 September 2017*/
+
+
