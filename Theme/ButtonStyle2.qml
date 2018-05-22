@@ -6,7 +6,6 @@ import QtQuick.Controls.Styles 1.4
 Button{
     id: themeButtonId
     enabled: control.enabled
-
     style: ButtonStyle {
 //        button background color
         property color greyNormal: "transparent"

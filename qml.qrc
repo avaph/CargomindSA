@@ -15,5 +15,7 @@
         <file>Sidebar.qml</file>
         <file>Theme/ButtonStyle1.qml</file>
         <file>Theme/ButtonStyle2.qml</file>
+        <file>Resources/Icons/deploy_di.png</file>
+        <file>Resources/Icons/deploy_en.png</file>
     </qresource>
 </RCC>

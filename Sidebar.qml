@@ -24,18 +24,44 @@ Item {
         spacing: 5
         anchors.top: parent.top
 
+        Theme.ButtonStyle2 {
+            id: importBtnId
+            enabled: true
+            text: qsTr("Import")
+        }
+
         Theme.ButtonStyle1 {
-        id: planBtnId
-        enabled: true
-        text: qsTr("Plan")}
+            id: planBtnId
+            enabled: true
+            text: qsTr("Plan")
+        }
+
+        Theme.ButtonStyle2 {
+            id: deployBtnId
+            enabled: true
+            text: qsTr("Deploy")
+        }
+
+        Rectangle {
+        id: spaceId
+        height: 500
+        width: parent.width
+        color: "transparent"
+        }
+
+        Theme.ButtonStyle2 {
+            id: removeBtnId
+            enabled: true
+            text: qsTr("Remove")
+        }
 
 
+        Theme.ButtonStyle2 {
+            id: storageBtnId
+            enabled: true
+            text: qsTr("Storage")
+        }
 
-    Theme.ButtonStyle2 {
-    id: deployBtnId
-    enabled: true
-    text: qsTr("Deploy")}
-
-}
+    }
 }
 

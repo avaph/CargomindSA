@@ -3,10 +3,9 @@ import QtQuick.Controls 1.4
 import QtQuick.Controls.Styles 1.4
 
 
-Button{
+ToolButton{
     id: themeButtonId
     enabled: control.enabled
-
     style: ButtonStyle {
 //        button background color
         property color blueNormal: "#FF294877"
