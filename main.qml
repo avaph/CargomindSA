@@ -1,6 +1,6 @@
 import QtQuick 2.10
 import QtQuick.Window 2.10
-import QtQuick.Controls 2.2
+import QtQuick.Controls 1.4
 import QtQuick.Layouts 1.3
 import QtQuick.Dialogs 1.2
 import QtQuick.Controls.Styles 1.4
@@ -33,8 +33,10 @@ Window {
         anchors.rightMargin: 0
 
         Sidebar {
-            anchors.fill: parent
+        anchors.top: parent.top
+        anchors.topMargin: 20
         }
+
     }
 
     Rectangle {
@@ -78,7 +80,7 @@ Window {
         anchors.topMargin: 20
     }
 
-    Frame {
+    Rectangle {
         id: frameId
         anchors.right: stackviewId.left
         anchors.rightMargin: 20
