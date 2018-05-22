@@ -15,64 +15,27 @@ Item {
     property color blueNormal: "#FF4172119"
     property color blueHover: "#FF5496158"
     property color blueClicked: "#FF3765107"
-    property color greyNormal: "transparent"
-    property color greyHover: "#FF646464"
-    property color greyClicked: "#FF505050"
 
-    ButtonStyle {
-        id: buttonStyleId
-                    background: Rectangle {
-                        implicitWidth: 100
-                        implicitHeight: 25
-                        border.width: control.activeFocus ? 2 : 1
-                        border.color: "#888"
-                        radius: 0
-                        color: "red"
-
-                    }
-                }
 
 
 
     ColumnLayout {
+        id: buttonGroupId
         spacing: 5
         anchors.top: parent.top
 
-        Theme.Button {
-            id: planBtnId
-            text: qsTr("1")
-
-        }
-
-        Theme.Button {
-            id: deployBtnId
-                text: qsTr("1")
-
-        }
-
-        Theme.Button {
-            id: saveBtnId
-               text: qsTr("1")
-
-        }
-
-        Theme.Button {
-            id: button4
-               text: qsTr("1")
-
-        }
-
-        Theme.Button {
-            id: button5
-               text: qsTr("1")
-
-
-        }
-
-
-    }
+        Theme.ButtonStyle1 {
+        id: planBtnId
+        enabled: true
+        text: qsTr("Plan")}
 
 
 
+    Theme.ButtonStyle2 {
+    id: deployBtnId
+    enabled: true
+    text: qsTr("Deploy")}
 
 }
+}
+

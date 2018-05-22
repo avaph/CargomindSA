@@ -1,9 +1,8 @@
 import QtQuick 2.10
 import QtQuick.Window 2.10
-import QtQuick.Controls 1.4
+import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.3
 import QtQuick.Dialogs 1.2
-import QtQuick.Controls.Styles 1.4
 import Qt.labs.calendar 1.0
 import Qt.labs.folderlistmodel 2.2
 import QtQuick.Extras 1.4

@@ -13,6 +13,7 @@
         <file>Filter.js</file>
         <file>BoxList.qml</file>
         <file>Sidebar.qml</file>
-        <file>Theme/Button.qml</file>
+        <file>Theme/ButtonStyle1.qml</file>
+        <file>Theme/ButtonStyle2.qml</file>
     </qresource>
 </RCC>
