@@ -17,5 +17,6 @@
         <file>Theme/ButtonStyle2.qml</file>
         <file>Resources/Icons/deploy_di.png</file>
         <file>Resources/Icons/deploy_en.png</file>
+        <file>Resources/Font/AVENIRNEXTLTPRO-REGULAR.OTF</file>
     </qresource>
 </RCC>

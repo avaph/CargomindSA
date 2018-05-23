@@ -454,16 +454,7 @@ QMessageBox {
    <property name="spacing">
     <number>0</number>
    </property>
-   <property name="leftMargin">
-    <number>0</number>
-   </property>
-   <property name="topMargin">
-    <number>0</number>
-   </property>
-   <property name="rightMargin">
-    <number>0</number>
-   </property>
-   <property name="bottomMargin">
+   <property name="margin">
     <number>0</number>
    </property>
    <item>
@@ -484,16 +475,7 @@ QMessageBox {
       <property name="spacing">
        <number>0</number>
       </property>
-      <property name="leftMargin">
-       <number>0</number>
-      </property>
-      <property name="topMargin">
-       <number>0</number>
-      </property>
-      <property name="rightMargin">
-       <number>0</number>
-      </property>
-      <property name="bottomMargin">
+      <property name="margin">
        <number>0</number>
       </property>
       <item>
@@ -680,7 +662,7 @@ QMessageBox {
                 <string> planned</string>
                </property>
                <property name="icon">
-                <iconset resource="../deps/resources/resource.qrc">
+                <iconset>
                  <normaloff>:/images/sortlist.png</normaloff>:/images/sortlist.png</iconset>
                </property>
                <property name="iconSize">
@@ -724,7 +706,7 @@ QMessageBox {
                 <string> all boxes</string>
                </property>
                <property name="icon">
-                <iconset resource="../deps/resources/resource.qrc">
+                <iconset>
                  <normaloff>:/images/sortlist.png</normaloff>:/images/sortlist.png</iconset>
                </property>
                <property name="iconSize">
@@ -774,7 +756,7 @@ QMessageBox {
                 <string> unplanned</string>
                </property>
                <property name="icon">
-                <iconset resource="../deps/resources/resource.qrc">
+                <iconset>
                  <normaloff>:/images/sortlist.png</normaloff>:/images/sortlist.png</iconset>
                </property>
                <property name="iconSize">
@@ -1610,16 +1592,7 @@ QMessageBox {
              <property name="spacing">
               <number>0</number>
              </property>
-             <property name="leftMargin">
-              <number>25</number>
-             </property>
-             <property name="topMargin">
-              <number>25</number>
-             </property>
-             <property name="rightMargin">
-              <number>25</number>
-             </property>
-             <property name="bottomMargin">
+             <property name="margin">
               <number>25</number>
              </property>
              <item>
@@ -2434,7 +2407,7 @@ QMessageBox {
                   <string>close</string>
                  </property>
                  <property name="icon">
-                  <iconset resource="../deps/resources/resource.qrc">
+                  <iconset>
                    <normaloff>:/images/close_en.png</normaloff>:/images/close_en.png</iconset>
                  </property>
                  <property name="iconSize">
@@ -2526,7 +2499,7 @@ QMessageBox {
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="../deps/resources/resource.qrc">:/images/cargomind_logo.png</pixmap>
+             <pixmap>:/images/cargomind_logo.png</pixmap>
             </property>
             <property name="alignment">
              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -2580,16 +2553,7 @@ QMessageBox {
              <property name="spacing">
               <number>10</number>
              </property>
-             <property name="leftMargin">
-              <number>0</number>
-             </property>
-             <property name="topMargin">
-              <number>0</number>
-             </property>
-             <property name="rightMargin">
-              <number>0</number>
-             </property>
-             <property name="bottomMargin">
+             <property name="margin">
               <number>0</number>
              </property>
              <item>
@@ -2783,7 +2747,7 @@ QMessageBox {
                 <string>reset view</string>
                </property>
                <property name="icon">
-                <iconset resource="../deps/resources/resource.qrc">
+                <iconset>
                  <normaloff>:/images/resetview_en.png</normaloff>:/images/resetview_en.png</iconset>
                </property>
                <property name="iconSize">
@@ -3101,7 +3065,7 @@ QMessageBox {
                <string>clear filter</string>
               </property>
               <property name="icon">
-               <iconset resource="../deps/resources/resource.qrc">
+               <iconset>
                 <normaloff>:/images/clearfilter_en.png</normaloff>:/images/clearfilter_en.png</iconset>
               </property>
               <property name="iconSize">
@@ -3416,7 +3380,7 @@ QMessageBox {
           <string>deploy</string>
          </property>
          <property name="icon">
-          <iconset resource="../deps/resources/resource.qrc">
+          <iconset>
            <normaloff>:/images/deploy_en.png</normaloff>
            <normalon>:/images/deploy_en.png</normalon>
            <disabledoff>:/images/deploy_di.png</disabledoff>
@@ -3513,7 +3477,7 @@ QMessageBox {
           <string>import</string>
          </property>
          <property name="icon">
-          <iconset resource="../deps/resources/resource.qrc">
+          <iconset>
            <normaloff>:/images/import_en.png</normaloff>:/images/import_en.png</iconset>
          </property>
          <property name="toolButtonStyle">
@@ -3558,7 +3522,7 @@ QMessageBox {
           <string>remove</string>
          </property>
          <property name="icon">
-          <iconset resource="../deps/resources/resource.qrc">
+          <iconset>
            <normaloff>:/images/deletebox_en.png</normaloff>
            <disabledoff>:/images/deletebox_di.png</disabledoff>:/images/deletebox_en.png</iconset>
          </property>
@@ -3591,7 +3555,7 @@ QMessageBox {
           <string>save</string>
          </property>
          <property name="icon">
-          <iconset resource="../deps/resources/resource.qrc">
+          <iconset>
            <normaloff>:/images/save_en.png</normaloff>
            <disabledoff>:/images/save_di.png</disabledoff>:/images/save_en.png</iconset>
          </property>
@@ -3624,7 +3588,7 @@ QMessageBox {
           <string>storage</string>
          </property>
          <property name="icon">
-          <iconset resource="../deps/resources/resource.qrc">
+          <iconset>
            <normaloff>:/images/simulate_en.png</normaloff>
            <disabledoff>:/images/simulate_di.png</disabledoff>:/images/simulate_en.png</iconset>
          </property>
