@@ -13,7 +13,7 @@ Window {
     property color windowBackground: "#FF323232"
     property color boxlistBackground: "#FF404040"
     property color infoBackground: "#FF444444"
-    property color sidebarBackground: "#FF484848"
+
 
     id: window
     visible: true
@@ -23,20 +23,14 @@ Window {
     visibility: "Maximized"
     color: windowBackground
     
-    Rectangle {
+    Sidebar {
         id: sidebarId
-        width: 100
+        anchors.top: parent.top
         height: parent.height
-        color: sidebarBackground
         anchors.right: parent.right
         anchors.rightMargin: 0
-
-        Sidebar {
-        anchors.top: parent.top
-        anchors.topMargin: 20
-        }
-
     }
+
 
     Rectangle {
         id: boxlistId
@@ -48,11 +42,26 @@ Window {
         anchors.bottomMargin: 0
         anchors.rightMargin: 0
         anchors.leftMargin: 0
+
+        ListView { //  Listview: container to display the list
+            id: listView
+            delegate: BoxListDelegate {}
+            model: BoxList {}
+            spacing: 70
+            orientation: ListView.Horizontal
+            flickableDirection: Flickable.HorizontalFlick
+            contentWidth: height
+            anchors.leftMargin: 20
+            anchors.bottomMargin: 20
+            anchors.topMargin: 20
+            anchors.fill: parent
+            clip: true
+        }
     }
 
-    RowLayout {
-        id: filterrowId
-        height: 30
+    Filter{
+        id: filterRowId
+        height: 40
         width: boxlistId.width
         anchors.bottom: boxlistId.top
         anchors.left: parent.left
@@ -61,11 +70,6 @@ Window {
         anchors.leftMargin: 20
         anchors.rightMargin: 20
 
-        Rectangle {
-            color: "transparent"
-            border.color: "#50FFFFFF"
-            anchors.fill: parent
-        }
     }
 
     StackView {
@@ -73,13 +77,13 @@ Window {
         width: 260
         anchors.right: sidebarId.left
         anchors.rightMargin: 20
-        anchors.bottom: filterrowId.top
+        anchors.bottom: filterRowId.top
         anchors.bottomMargin: 20
         anchors.top: parent.top
         anchors.topMargin: 20
     }
 
-    Rectangle {
+   Frame {
         id: frameId
         anchors.right: stackviewId.left
         anchors.rightMargin: 20

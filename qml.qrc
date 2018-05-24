@@ -18,5 +18,8 @@
         <file>Resources/Icons/deploy_di.png</file>
         <file>Resources/Icons/deploy_en.png</file>
         <file>Resources/Font/AVENIRNEXTLTPRO-REGULAR.OTF</file>
+        <file>BoxListDelegate.qml</file>
+        <file>Filter.qml</file>
+        <file>Theme/CheckBox.qml</file>
     </qresource>
 </RCC>

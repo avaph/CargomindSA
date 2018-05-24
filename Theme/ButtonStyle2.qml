@@ -1,15 +1,11 @@
 import QtQuick 2.10
 import QtQuick.Controls 2.2
 
-
-
-
-
     ToolButton {
         //        button background color
-        property color blueNormal: "#FF294877"
-        property color blueHover: "#FF36609e"
-        property color blueClicked: "#FF25416b"
+        property color greyNormal: "transparent"
+        property color greyHover: "#FF404040"
+        property color greyClicked: "#FF323232"
         property color buttonDisabled: "#FF404040"
         //        text background color
         property color textNormal: "#FFF0F0F0"
@@ -25,7 +21,7 @@ import QtQuick.Controls 2.2
             id: buttonBackgroundId
             implicitHeight: 80
             implicitWidth: 100
-            color: toolBtnId.pressed? blueClicked : toolBtnId.hovered? blueHover : toolBtnId.enabled? blueNormal : buttonDisabled }
+            color: toolBtnId.pressed? greyClicked : toolBtnId.hovered? greyHover : toolBtnId.enabled? greyNormal : buttonDisabled }
 
         contentItem:
             Label {
@@ -33,10 +29,10 @@ import QtQuick.Controls 2.2
             text: toolBtnId.text
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
-            font.pointSize: 12
+            font.pointSize: 10
             font.family: "Verdana"
             color: toolBtnId.enabled? textNormal : textDisabled
-            }
+                        }
     }
 
 
